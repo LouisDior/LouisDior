@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Servidores Nginx</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/LG.png" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/Nginx.css">
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<script src="../js/fontawesome-all.js"></script>
+
+</head>
+<body>
+
+
+<!-------Creacion de menu--------->
+<nav>
+
+
+	<input type="checkbox" id="check">
+	<label for="check" class="checkbtn">
+		
+		<i class ="fas fa-bars"></i>
+
+	</label>
+
+	<h3 class="logotipo"><img src="../img/LOGO6.png" class="LogoIma">Louis Dior</h3>
+    
+    <a href="../Enlaces/user.html"><i id="user" class="fa fa-user-circle"></i></a>
+    <a href="../Enlaces/tienda.html"><i id="cart" class="fa fa-shopping-cart" ></i></a>
+
+	<ul id="lin1">
+    <li><i class="fas fa-home" id="a"></i><a href="../index.html">Inicio</a></li>
+	<li><i class="fas fa-book" id="a"></i><a href="../Enlaces/Historia.html">Historia</a></li>
+	<li><i class="fas fa-server" id="b"></i><a href="../Enlaces/ServidoresWeb.html">Servidores web</a></li>
+	<li><i class="fa fa-window-restore" id="c"></i><a href="../Enlaces/Maquetacion.html">Maquetacion web</a></li>
+	<li><i class="fa fa-globe" id="d"></i><a href="../Enlaces/Plataforma.html">Plataforma web</a></li>
+	<li><i class="fa fa-cogs" id="e"></i><a href="../Enlaces/Internet.html">Internet de las cosas</a></li>
+	<li><i class="fa fa-file-archive" id="f"></i><a href="../Enlaces/glosario.html">Glosario tecnico</a></li>
+	<li><i class="fa fa-info-circle" id="g"></i><a href="../Enlaces/informacion.html">Información</a></li>
+    <li><i class="fa fa-file" id="g"></i><a href="../Enlaces/encuesta.html">Encuesta</a></li>
+        <li><i class="fa fa-envelope" id="g"></i><a href="../Enlaces/contacto.html">Contacto</a></li>
+	</ul>
+</nav>
+
+<!--Contenido de la pagina-->
+    
+<div class="Ma">
+    <h1>Servidor Nginx</h1><br>
+	<p>Nginx es un servidor proxy inverso y HTTP, un servidor proxy de correo y un servidor proxy TCP / UDP genérico, originalmente escrito por Igor Sysoev . Durante mucho tiempo, se ha estado ejecutando en muchos sitios rusos muy cargados, incluidos Yandex , Mail.Ru , VK y Rambler . Según Netcraft, nginx sirvió o hizo proxy del 25,58% de los sitios más ocupados en julio de 2020.</p><br>
+
+	<h3>Funciones Basicas de HTTP</h3><br>
+	<ul type="square">
+		<li>Sirviendo archivos estáticos e indexados , autoindexado ; abrir la caché del descriptor de archivos.</li><br>
+		<li>Proxying inverso acelerado con almacenamiento en caché ; equilibrio de carga y tolerancia a fallas.</li><br>
+		<li>Soporte acelerado con almacenamiento en caché de servidores FastCGI , uwsgi , SCGI y memcached ; equilibrio de carga y tolerancia a fallas.</li><br>
+		<li>Arquitectura modular. Los filtros incluyen gzip , rangos de bytes, respuestas fragmentadas, XSLT , SSI y filtro de transformación de imágenes . Múltiples inclusiones SSI dentro de una sola página se pueden procesar en paralelo si son manejadas por servidores proxy o FastCGI / uwsgi / SCGI.</li><br>
+		<li>Soporte SSL y TLS SNI.</li><br>
+		<li>Soporte para HTTP / 2 con priorización ponderada y basada en dependencia.</li><br>
+	</ul>
+
+	<h3>Arquitectura</h3><br>
+	<ul type="square">
+		<li>Un maestro y varios procesos de trabajo; los procesos de trabajo se ejecutan bajo un usuario sin privilegios</li><br>
+		<li>Configuración flexible</li><br>
+		<li>Reconfiguración y actualización de un ejecutable sin interrumpir el servicio al cliente</li><br>
+		<li>Soporte para kqueue (FreeBSD 4.1+), epoll (Linux 2.6+), / dev / poll (Solaris 7 11/99 +), puertos de eventos (Solaris 10), select y poll</li><br>
+		<li>El soporte de las diversas funciones de kqueue, incluyendo EV_CLEAR, EV_DISABLE (para deshabilitar eventos temporalmente), NOTE_LOWAT, EV_EOF, número de datos disponibles, códigos de error</li><br>
+		<li>El soporte de varias funciones de epoll, incluyendo EPOLLRDHUP (Linux 2.6.17+, glibc 2.8+) y EPOLLEXCLUSIVE (Linux 4.5+, glibc 2.24+)</li><br>
+		<li>Compatibilidad con sendfile (FreeBSD 3.1+, Linux 2.2+, macOS 10.5+), sendfile64 (Linux 2.4.21+) y sendfilev (Solaris 8 7/01 +)</li><br>
+		<li>Archivo AIO (FreeBSD 4.3+, Linux 2.6.22+)</li><br>
+		<li>DIRECTIO (FreeBSD 4.4+, Linux 2.4+, Solaris 2.6+, macOS)</li><br>
+		<li>Accept-filtros (FreeBSD 4.1 y posteriores, NetBSD 5.0 +) y TCP_DEFER_ACCEPT (Linux 2.4+) de soporte</li><br>
+		<li>10.000 conexiones HTTP Keep-Alive inactivas ocupan aproximadamente 2,5 M de memoria</li><br>
+		<li>Las operaciones de copia de datos se reducen al mínimo.</li><br>
+	</ul>
+
+    <hr><br>
+    
+<!--Botones inferiores de la pagina-->   
+    
+    <div class="desarrollo">
+<center>
+<a href="../Enlaces/ServidorApache.html"><button >Atras</button></a>
+     <a href="../Enlaces/ServidoresWeb.html"><button>Principal</button></a>
+        <a href="../Enlaces/ServidorLiteSpeed.html"><button>Siguiente</button></a>
+</center>
+</div>
+
+</div>
+    
+<!--Creacion de pie de pagina-->
+    
+    <footer>
+	<p class="textofooter">
+	Copyright © Todos los Derechos Reservados
+	</p>
+	
+</footer>
+<!--DIV para evitar el logo del host gratuito-->
+<div id="ultimo"></div>
+    
+</body>
+</html>

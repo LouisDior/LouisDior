@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es-sv">
+<head>
+    <meta charset="UTF-8">
+	<title>Encuesta de satisfaccion</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../js/encuesta.js"> 
+    <link rel="shortcut icon" type="image/x-icon" href="../img/LG.png" />
+	<link rel="stylesheet" href="../css/encuesta.css">
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<script src="../js/fontawesome-all.js"></script>
+    
+    
+</head>   
+<body background="../img/Ima2.jpeg">
+    
+    <!--Creacion de menu-->
+<nav>
+
+
+	<input type="checkbox" id="check">
+	<label for="check" class="checkbtn">
+		
+		<i class ="fas fa-bars"></i>
+
+	</label>
+
+	<h3 class="logotipo"><img src="../img/LOGO6.png" class="LogoIma">Louis Dior</h3>
+    
+    <a href="../Enlaces/user.html"><i id="user" class="fa fa-user-circle"></i></a>
+    <a href="../Enlaces/tienda.html"><i id="cart" class="fa fa-shopping-cart" ></i></a>
+
+	<ul>
+    <li><i class="fas fa-home" id="a"></i><a href="../index.html">Inicio</a></li>
+	<li><i class="fas fa-book" id="a"></i><a href="../Enlaces/Historia.html">Historia</a></li>
+	<li><i class="fas fa-server" id="b"></i><a href="../Enlaces/ServidoresWeb.html">Servidores web</a></li>
+	<li><i class="fa fa-window-restore" id="c"></i><a href="../Enlaces/Maquetacion.html">Maquetacion web</a></li>
+	<li><i class="fa fa-globe" id="d"></i><a href="../Enlaces/Plataforma.html">Plataforma web</a></li>
+	<li><i class="fa fa-cogs" id="e"></i><a href="../Enlaces/Internet.html">Internet de las cosas</a></li>
+	<li><i class="fa fa-file-archive" id="f"></i><a href="../Enlaces/glosario.html">Glosario tecnico</a></li>
+	<li><i class="fa fa-info-circle" id="g"></i><a href="../Enlaces/informacion.html">Información</a></li>
+        <li><i class="fa fa-file" id="g"></i><a href="../Enlaces/encuesta.html">Encuesta</a></li>
+        <li><i class="fa fa-envelope" id="g"></i><a href="../Enlaces/contacto.html">Contacto</a>
+
+
+	
+	</ul>
+
+</nav>
+    
+    
+   <script>
+
+function SoloLetras(e)
+{
+key = e.keyCode || e.which;
+tecla = String.fromCharCode(key).toString();
+letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnopqrstuvwxyzáéíóú.VK_SPACE.&#32;U+0020";
+
+especiales = [8,13,32];
+tecla_especial = false
+for(var i in especiales) {
+if(key == especiales[i]){
+ tecla_especial = true;
+ break;
+}
+}
+
+if(letras.indexOf(tecla) == -1 && !tecla_especial)
+{
+ alert("Ingresar solo letras");
+ return false;
+}
+}
+
+function Especial(e)
+{
+key = e.keyCode || e.which;
+tecla = String.fromCharCode(key).toString();
+letraespecial = "$%!@.VK_SPACE.&#32;.U+0020.";
+
+especiales = [8,13];
+tecla_especial = false
+for(var i in especiales) {
+if(key == especiales[i]){
+ tecla_especial = true;
+ break;
+}
+}
+
+if(letraespecial.indexOf(tecla) == -1 && !tecla_especial)
+{
+ alert("Ingresar solo letras especiales");
+ return false;
+}
+}
+
+</script> 
+    
+<div class="Contenedor">
+    
+<form name="Validar" method="post" action="javascript:alert('Gracias, por completar la encuesta de satisfaccion.Tu opinion es muy importante para nosotros');" onsubmit="return validar();">
+    
+    <center><h1>Encuesta de satisfaccion</h1></center><br>
+    <center>
+        <label for="txtNom">Nombre:</label>
+        <br>
+        <input type="text" size="50" maxlength="50" onkeypress="return SoloLetras(event);" required placeholder="Digite su nombre" autocomplete="off" >
+        <br><br>
+        Edad:
+        <br>
+        <input type="number" name="txtEdad" required>
+        <br><br>
+        Genero: 
+        <br><br>
+        <input type="radio" name="genero" required value="M">Masculino&nbsp;
+        <input type="radio" name="genero" value="O">Otros&nbsp;
+        <input type="radio" name="genero" value="F">Femenino
+    </center>
+    <br><br>
+    <p>1. Desde hace cuánto utiliza nuestros productos o servicios?</p><br>
+    <p class="clase1">
+        <input type="radio" name="tiempo" required value="Mesuno">Menos de un mes &nbsp;
+        <input type="radio" name="tiempo" value="Mesdos">1 a 3 meses &nbsp;
+        <input type="radio" name="tiempo" value="Mestres">3 a 6 meses
+    </p><br>
+    <p class="clase1">
+        <input type="radio" name="tiempo" value="Mescuatro">6 meses a 1 año &nbsp;
+        <input type="radio" name="tiempo" value="Mescinco">1 a 3 año &nbsp;
+        <input type="radio" name="tiempo" value="Messeis">Mas de 3 años
+    </p>
+    <br><br>
+    <p>2. Cuál es la frecuencia con que realiza compras en nuestro sitio web?</p><br>
+    <p class="clase1">
+        <input type="radio" name="frecuencia" required value="semanal">Semanal &nbsp;
+        <input type="radio" name="frecuencia" value="mensual">Mensual &nbsp;
+        <input type="radio" name="frecuencia" value="trimestral">Trimestral
+    </p><br>
+    <p class="clase1">
+        <input type="radio" name="frecuencia" value="semestral">Semestral &nbsp;
+        <input type="radio" name="frecuencia" value="anual">Anual &nbsp;
+        <input type="radio" name="frecuencia" value="cadaDosAño">Cada 2 años
+    </p>
+    <br><br>
+    <p>3. Considera que los zapatos cumplieron con sus expectativas?</p><br>
+    <p class="clase1">
+        <input type="radio" name="expec" required value="1">Supero mis expectativas &nbsp;
+        <input type="radio" name="expec" value="2">Supero mis expectativas en cierta forma
+    </p><br>
+    <p class="clase1">
+        <input type="radio" name="expec" value="3">Fue lo que yo esperaba &nbsp;
+        <input type="radio" name="expec" value="4">No, fue menos de lo que esperaba &nbsp;
+    </p>
+    <br><br>
+    <p>4. Que es lo que mas te gusta de la compania?</p><br>
+    <div id="box">   
+    <p class="clase2">
+        <input type="checkbox" name="gusto" value="pre">Los precios <br>
+        <input type="checkbox" name="gusto" value="aten">La atencion al cliente <br>
+        <input type="checkbox" name="gusto" value="dise">El diseño de la pagina web <br>
+        <input type="checkbox" name="gusto" value="vari">La variedad de productos <br>
+        <input type="checkbox" name="gusto" value="fac">La facilidad de pagos <br>
+        <input type="checkbox" name="gusto" value="loca">La localizacion de las sucursales<br>
+    </p>
+    </div>
+    <br><br>
+    <p>5. Cuál es la probabilidad de que vuelva a comprar nuestros productos?</p><br>
+    <p class="clase1">
+        <input type="radio" name="pro" required value="Muy">Muy probable &nbsp;
+        <input type="radio" name="pro" value="proba">Probable &nbsp;
+    </p><br>
+    <p class="clase1">
+        <input type="radio" name="pro" value="poco">Poco probable &nbsp;
+        <input type="radio" name="pro" value="nada">Nada probable
+    </p>
+    <br><br>
+    <p>6. Cuál es la calidad de la información sobre nuestros productos?</p><br>
+    <p class="clase1">
+        <input type="radio" name="cali" required value="alta">Alta&nbsp;
+        <input type="radio" name="cali" value="buena">Buena&nbsp;
+    </p><br>
+    <p class="clase1">
+        <input type="radio" name="cali" value="media">Media&nbsp;
+        <input type="radio" name="cali" value="baja">Baja&nbsp;
+    </p>
+    <br><br>
+    <p>7. Si piensa en productos o servicios parecidos, cuál es su calificación para nuestra marca?</p><br>
+    <p class="clase1">
+        <input type="radio" name="califi" required value="ca1">Es la mejor opción entre todas &nbsp;
+        <input type="radio" name="califi" value="ca2">Es la mejor opción hasta ahora &nbsp;
+    </p><br>
+    <p class="clase1">
+        <input type="radio" name="califi" value="ca3">Es una buena opción &nbsp;
+        <input type="radio" name="califi" value="ca4">Es mi última opción &nbsp;
+    </p>			
+<br><br>
+    <p>8. Que te parecio el diseño de la pagina?</p><br>
+    <p class="clase1">
+        <input type="radio" name="dise" required value="Mbueno">Muy buena &nbsp;
+        <input type="radio" name="dise" value="Bueno">Buena
+    </p><br>
+    <p class="clase1">
+        <input type="radio" name="dise" value="Regular">Regular &nbsp;
+        <input type="radio" name="dise" value="Mala">Mala
+    </p>			
+<br><br>
+    <p>9. Cuál es el aspecto o aspectos que mejoraría en su experiencia con nuestra marca?</p><br>
+    <textarea name="txtDir" rows="4" cols="80"></textarea>
+<br><br>
+    <p>10. Cuál es la probabilidad de que nos recomiende con sus conocidos?</p><br>
+    <p class="clase1">
+        <input type="radio" name="reco" required value="ya">Ya los recomiendo &nbsp;
+        <input type="radio" name="reco" value="muypro">Es muy probable
+    </p><br>
+    <p class="clase1">
+        <input type="radio" name="reco" value="probable">Es probable &nbsp;
+        <input type="radio" name="reco" value="pocoProbable">Es poco probable
+    </p>
+	<br>
+	<p>11.Te parece correcto el precio del producto?</p><br>
+    <p class="clase1">
+        <input type="radio" name="recc" required value="Si">Si &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="recc" value="No">No
+    </p>
+        
+    <br>
+    <p>12.Como conociste acerca de la compania?</p><br>
+    <p class="clase1">
+	   <select>
+           <option>Instagram</option>
+           <option>Facebook</option>
+		  <option>Recomendacion</option>
+		  <option>Periodicos</option>
+		  <option>Television</option>
+		  <option>Por otro medio</option>
+	   </select>
+	</p><br>
+	<p>13.Que opinion tienes de las marcas de zapatos con las que cuenta nuestro catalogo?</p><br>
+	   <textarea name="txtMar" rows="4" cols="80"required ></textarea>
+	<br><br>
+    <p>14. Aproximadamente, Cuánto gasta en una factura por un par de zapatos?</p>
+    <br>
+    <p class="clase1">
+        <input type="radio" name="rem" required value="$50">Menos de $50 &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="rem" value="50-90">$50 a $90&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="rem" value="90-130">$90 a $130&nbsp;&nbsp;&nbsp;	
+    </p><br>
+	<p class="clase1">
+        <input type="radio" name="rem" required value="130-170">$130 a $170&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="rem" value="170-210">$170 a $210&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="rem" value="210">Mas de $210&nbsp;&nbsp;&nbsp;	
+    </p><br>
+	<p>15.Que tipo de promocion es la que lo motiva a comprar?</p><br>
+    <p class="clase1">
+        <input type="radio" name="pro" required value="Bonificaciones de producto">Bonificaciones de producto&nbsp;
+        <input type="radio" name="pro" value="Descuentos">Descuento&nbsp;
+    </p><br>
+    <p class="clase1">
+        <input type="radio" name="pro" required value="Segundo mitad de precio">Segundo a mitad de precio&nbsp;
+        <input type="radio" name="pro" value="170-210">Otro
+    </p><br>
+    <center>
+	<div id="bo">
+    <input class="clase1" type="submit" name="btnaceptar" value="Aceptar" onclick='swal("Muchas Gracias!", "", "success")'> <input class="clase1" type="reset" name="btnCancelar" value="Cancelar"></div></center>
+    <br>
+    <br>
+</form>
+</div> 
+    <!--Creacion de pie de pagina-->
+<footer>
+	<p class="textofooter">
+	Copyright © Todos los Derechos Reservados
+	</p>
+	
+</footer>
+<!--DIV que oculta el logo del host gratuito-->
+<div id="ultimo"></div>
+    
+</body>
+</html>

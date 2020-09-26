@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Servidores Web</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/LG.png" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/ServidoresWEB.css">
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<script src="../js/fontawesome-all.js"></script>
+
+</head>
+<body>
+
+<!--Creacion de menu-->
+<nav>
+	<input type="checkbox" id="check">
+	<label for="check" class="checkbtn">
+		
+		<i class ="fas fa-bars"></i>
+
+	</label>
+
+	<h3 class="logotipo"><img src="../img/LOGO6.png" class="LogoIma">Louis Dior</h3>
+    
+    <a href="../Enlaces/user.html"><i id="user" class="fa fa-user-circle"></i></a>
+    <a href="../Enlaces/tienda.html"><i id="cart" class="fa fa-shopping-cart" ></i></a>
+
+	<ul>
+    <li><i class="fas fa-home" id="a"></i><a href="../index.html">Inicio</a></li>
+	<li><i class="fas fa-book" id="a"></i><a href="../Enlaces/Historia.html">Historia</a></li>
+	<li><i class="fas fa-server" id="b"></i><a href="../Enlaces/ServidoresWeb.html">Servidores web</a></li>
+	<li><i class="fa fa-window-restore" id="c"></i><a href="../Enlaces/Maquetacion.html">Maquetacion web</a></li>
+	<li><i class="fa fa-globe" id="d"></i><a href="../Enlaces/Plataforma.html">Plataforma web</a></li>
+	<li><i class="fa fa-cogs" id="e"></i><a href="../Enlaces/Internet.html">Internet de las cosas</a></li>
+	<li><i class="fa fa-file-archive" id="f"></i><a href="../Enlaces/glosario.html">Glosario tecnico</a></li>
+	<li><i class="fa fa-info-circle" id="g"></i><a href="../Enlaces/informacion.html">Información</a></li>
+        <li><i class="fa fa-file" id="g"></i><a href="../Enlaces/encuesta.html">Encuesta</a></li>
+        <li><i class="fa fa-envelope" id="g"></i><a href="../Enlaces/contacto.html">Contacto</a></li>
+	
+	</ul>
+</nav>
+<!--creacion del contenido de la pagina-->   
+<div class="Ma">
+    <h1>Servidores Web</h1><br>
+	<p>Los servidores web son uno de los aspectos más importantes de Internet, ya que se trata de los encargados de despachar las páginas a los usuarios. Sin ellos, Internet como lo conocemos hoy en día simplemente no sería posible. Hoy veremos a fondo varios de los detalles más interesantes de los servidores web y su funcionamiento.</p><br>
+
+	<h2>¿Qué es un Servidor Web?</h2><br>
+	<p>El servidor web (también llamado webserver en inglés) es el software que se encarga de despachar el contenido de un sitio web al usuario.</p><br>
+    
+	<p>Este proceso de despacho, que a simple vista parece muy simple, es en realidad más complejo de lo que parece, pues toda la «magia» de un webserver ocurre fuera de quien está navegando por un sitio web. Existen multitud de servidores web, y entre los más conocidos podemos encontrar por ejemplo a Apache, Nginx, LiteSpeed o IIS.</p>
+    <br>
+	<p>Los servidores web varían mucho de uno a otro, por ejemplo si comparamos Apache y Nginx veremos que tienen diferencias muy notorias, aunque el objetivo final es el mismo: despachar contenido al usuario.</p><br>
+	<p>El proceso de despacho comienza en nuestro navegador web. Al escribir la dirección de un sitio web y presionar enter comienza la siguiente secuencia: el sistema hace una búsqueda DNS para encontrar en cuál servidor está alojado el sitio en cuestión.</p><br>
+	<p>Cuando el server es encontrado, el navegador le pide el contenido del sitio web, y acto seguido el webserver procesa este pedido y envía dicho contenido al navegador, lo cual da como resultado la visualización del sitio en nuestra pantalla.</p><br>
+
+	<h2>Funcionamiento de un Servidor Web</h2><br>
+	<p>Uno de los factores más importantes a la hora de decidir cuál servidor web utilizar es el sistema operativo de nuestro server, que es otra de sus características, siempre corren bajo un sistema operativo.</p><br>
+	<p>Por ejemplo en sistemas Windows Server la elección más tradicional es IIS de Microsoft, mientras que en otros como los basados en Linux se usa mucho Apache, Nginx y LiteSpeed.</p><br>
+	<p>Los sistemas de archivos también suelen variar según el entorno del server, en Linux generalmente tenemos EXT4 y en WS se usa REFS y también NFS, aunque existen otros.</p><br>
+	<p>Es posible también encontrar servidores web que son utilizados puramente para despachar contenidos estáticos como imágenes, videos, etc., ya que son muy buenos en dicha tarea, y en otros casos también tenemos los que son utilizados frecuentemente en entornos de hosting compartido, despachando varios sitios bajo una misma IP, o bajo IPs dedicadas.</p><br>
+	<p>También hay que destacar la compatibilidad con sitios dinámicos y los límites que podemos configurar a nivel de recursos como transferencia por ejemplo, permitiendo ser muy flexibles para revender hosting o hospedar sitios masivamente.</p><br>
+	<p>Un punto muy importante a tener en cuenta es el hardware, ya que el rendimiento de un servidor web tiene que ir acompañado del CPU, RAM y unidad de almacenamiento, cuanto mejores sean mejor será el despacho de nuestro sitio.</p><br>
+
+	<h2>¿Para que sirve un Servidor Web?</h2><br>
+	<p>La principal tarea que tiene un servidor web es la de despachar el contenido de un sitio web al usuario. Esto se logra mediante un proceso que a nuestros ojos no toma más que un segundo, pero a nivel del server es una secuencia más sofisticada de lo que parece.</p><br>
+	<p>Para que el servidor web pueda cumplir con su rol, tendrá primero que nada que recibir una petición de parte de un navegador, y a continuación buscar en los archivos del servidor la información que le está siendo solicitada.</p><br>
+	<p>Una vez que los archivos del sitio son localizados, el servidor web procede a interpretar las líneas de código y a enviar el resultado de regreso al navegador, el cual lo mostrará para nosotros.</p><br>
+	<p>Cuando este proceso se completa podemos decir que el web server ha cumplido con su tarea de servirnos el sitio web en cuestión para que nosotros podamos utilizarlo.</p><br>
+
+	<h2>Servidores Web mas utilizados</h2><br>
+	<p>Entre los servidores web más utilizados del mundo podemos encontrar algunos como Apache, Nginx, LiteSpeed & IIS. Los primeros tres son predominantes en sistemas Linux, mientras que IIS está orientado para entornos Windows.</p><br>
+	<p>Hoy en día la mayor cuota de mercado la posee IIS de Microsoft, con cerca de 688 millones de sitios según los datos del más reciente análisis de Netcraft. Le siguen Nginx con 358 millones de sitios y Apache con 313 millones.</p><br>
+<section id="plan">
+		<ol>
+			<li><a href="../ServidorApache.html"><b>Apache</b></a><br>
+                <p>Fue, durante casi 2 décadas, el webserver más utilizado del mundo, aunque en los últimos años ha perdido bastante terreno frente a rivales como Nginx o IIS. Aún así, sigue siendo un servidor web sólido, seguro, eficaz y fácil de configurar, sin mencionar que sigue siendo la opción predefinida para los servidores que corren cPanel, el panel de control más popular del mercado.</p></li><br>
+		<li><a href="../ServidorNginx.html"><b>Nginx</b></a><br>
+            <p>Es un webserver que ha tenido un crecimiento increíble en cuestión de unos pocos años, al punto de que actualmente está por delante de Apache. Considerado por muchos como el web server más rápido hoy en día, su alta capacidad para despachar contenido, su seguridad y solidez lo convierten en la opción número 1 de muchos administradores de sistemas.</p></li><br>
+		<li><a href="../ServidorLiteSpeed.html"><b>LiteSpeed</b></a><br>
+            <p>Es otro de los grandes webservers que podemos encontrar en el mercado. Si bien se trata de un software de pago, este servidor web ha demostrado que tiene un gran potencial. Combinando las reglas y flexibilidad de Apache y la velocidad y seguridad de Nginx, LiteSpeed se está abriendo camino como una alternativa muy sólida, rápida y segura. Su compatibilidad con cPanel también hace que sea popular entre servidores que utilizan dicho panel y que necesitan un mejor rendimiento que el brindado por Apache.</p></li><br>
+            <li>
+            <b>IIS</b><br>
+                <p>se ha convertido en poco tiempo en el webserver más utilizado del mundo. Desarrollado por Microsoft, IIS es el servidor web que viene integrado por defecto en servidores que corren Windows Server. Si bien es muy diferente a sus rivales de Linux, no deja de ser un webserver seguro, rápido y fácil de manejar.</p></li>
+        </ol>
+</section>
+
+    <br>
+	
+<!--Boton q te lleva a conocer mas servidores web-->  
+    <div class="desarrollo">
+
+
+<center><h2>Conoce mas acerca de los servidores web mas utilizados</h2></center>
+
+<a href="../Enlaces/ServidorApache.html"><button>Comenzar</button></a>
+
+</div>
+    
+</div>
+    
+<!--Creacion de pie de pagina-->
+    
+    <footer>
+	<p class="textofooter">
+	Copyright © Todos los Derechos Reservados
+	</p>
+	
+</footer>
+<!--Oculta el logo del host gratuito-->  
+<div id="ultimo"></div>
+    
+</body>
+</html>
