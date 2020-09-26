@@ -1,0 +1,423 @@
+* {
+
+padding:  0;
+margin:  0;
+text-decoration: none;
+box-sizing: border-box;
+
+}
+
+
+body{
+
+font-family: "Arial";
+}
+#user{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#cart{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#cart:hover{
+    color: gray;
+}
+#user:hover{
+    color: gray;
+}
+
+
+nav {
+
+background-color: #2c3e50;
+height: 80px;
+width: 100%;
+position: fixed;
+top: 0;
+z-index: 1;
+
+}
+
+
+#lin1{
+
+
+position: fixed;
+width: 25%;
+height: 100%;
+background: #2c3e50;
+top:  80px;
+left: -100%;
+transition: all .5s;
+text-align: left;
+
+
+}
+
+
+#a, #b, #c, #d, #e, #f, #g{
+
+color: white;
+margin-left: 5%;
+
+
+}
+
+
+
+
+nav #lin1 li {
+
+display: block;
+line-height: 50px;
+margin:  0 15px;
+margin-left: 2%;
+
+}
+
+
+
+nav #lin1 li:hover{
+
+background-color: #1b9bff;
+width: 100%;
+margin-left: 0%;
+transition: .5s;
+cursor: pointer;
+
+
+}
+
+
+
+h3.logotipo {
+
+color:  white;
+font-weight: bold;
+font-size: 34px;
+line-height: 80px;
+padding: 0 50px;
+float: right;
+
+
+}
+h4.menu {
+
+color:  white;
+font-weight: bold;
+font-size: 30px;
+line-height: 80px;
+padding: 0 10px;
+float: right;
+
+
+}
+
+
+
+nav #lin1 li a {
+
+color:  white;
+font-size: 17px;
+padding: 5px 5px;
+border-radius: 5px;
+
+}
+
+
+
+
+.checkbtn {
+
+font-size: 30px;
+color: white;
+float: left;
+line-height: 80px;
+margin-left: 25px;
+cursor: pointer;
+
+
+}
+
+.checkbtn:hover {
+
+color: gray;
+
+}
+
+
+#check {
+
+display: none;
+
+
+}
+
+
+#check:checked ~ #lin1{
+
+left: 0;
+
+}
+
+
+
+
+footer{
+
+background-color: black;
+margin-bottom: 0%;
+height: 50px;
+width: 100%;
+position: fixed;
+bottom: 0;
+    z-index: 1;
+}
+
+p.textofooter{
+margin-top: 1%;
+color: #fff;
+font-family: "Helvetica";
+text-align: center;
+    
+}
+/*----------------------------*/
+.Ma{
+    background-color: #fff;
+	width: auto;
+    height: 100px;
+    margin: 120px;
+	padding: 75px;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+.Ma h1{
+	text-align: center;
+	color: Red;
+	font-size: 40px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 2px #000;
+
+}
+
+.Ma h2{
+	text-align: center;
+	color: #000;
+	font-size: 35px;
+}
+.Ma p{
+    font-size: 19px;
+    text-align: justify;
+
+}
+
+.Ma a{
+    text-decoration: none;
+    color:#000;
+}
+.desarrollo{
+    width: 100%;
+    
+}
+
+.desarrollo button {
+border: none;
+color: #fff;
+background: maroon;
+padding: 10px 20px;
+cursor: pointer;
+font-size: 20px;
+border-radius: 5px;
+margin: auto;
+margin-top: 2%;
+margin-bottom: 70px;
+
+}
+
+.desarrollo button:hover{
+
+background-color: green;
+
+}
+#plan li{
+    font-size: 20px;
+    margin-left: 15px;
+}
+ul{
+    text-align: justify;
+}
+/*-----------------Imagen indice----------------------*/
+
+#fot{
+    display: flex;
+    margin-left: 20px;
+  
+}
+
+.LogoIma{
+    width: auto;
+    height: 75px;
+    position: fixed;
+    margin-top: 6px;
+    right: 206px;
+    padding-bottom: 10px;
+}
+
+
+
+#ultimo + div {
+    visibility:hidden;
+    
+}
+/*----------------------------*/
+
+@media (max-width:  952px) {
+
+
+* {
+
+margin :  0;
+
+
+}
+
+    h4.menu{
+        visibility: hidden;
+        font-size: 1px;
+    }
+
+h3.logotipo {
+
+font-size: 28px;
+
+}
+
+nav #lin1 li a {
+
+font-size: 16px;
+
+
+}
+    
+    .Ma h4{
+        text-align: center;
+    }  
+    
+    #fot{
+    display: block;
+    position: relative;
+    margin-left: 200px;
+    margin-right: 100px;
+    }
+    .Ma{
+	width: 100%;
+    margin: 1px;
+    margin-top: 20px;
+	padding: 75px;
+}
+    
+    .LogoIma{
+    width: auto;
+    height: 75px;
+    position: fixed;
+    margin-top: 6px;
+    right: 180px;
+    padding-bottom: 10px;
+}
+    
+}
+
+
+@media (max-width: 858px) {
+    
+ h4.menu{
+        visibility: hidden;
+        font-size: 1px;
+    }
+    
+
+
+#lin1{
+
+position: fixed;
+width: 100%;
+height: 100%;
+background: #2c3e50;
+top:  80px;
+left: -100%;
+transition: all .5s;
+text-align: left;
+
+
+}
+
+
+nav #lin1 i a {
+
+font-size: 20px;
+
+}
+
+p.textofooter{
+margin-top: 2%;
+color: #fff;
+font-family: "Helvetica";
+text-align: center;
+    
+}
+ 
+    .Ma{
+    width: 100vh;
+    max-width: 100%;    
+    height: 100px;
+    margin: 1px;
+    margin-top: 80px;
+	padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+    
+    }
+    
+    #fot{
+    display: block;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+    .Ma h1{
+	text-align: center;
+	color: Red;
+	font-size: 30px;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 2px #000;
+
+}
+    .desarrollo button{
+        margin-bottom: 80px;
+    }
+    #lin1{
+        margin-left: 0px;
+        text-align: justify;
+    }
+    .desarrollo button {
+
+padding: 10px 8px;
+cursor: pointer;
+font-size: 20px;
+margin: auto;
+margin-top: 2%;
+margin-bottom: 70px;
+
+}
+    
+    .LogoIma{
+    z-index: -22;
+}
+}

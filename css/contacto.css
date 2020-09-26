@@ -1,0 +1,505 @@
+
+* {
+
+padding:  0;
+margin:  0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+
+}
+
+body {
+    background: #f2f2f2;
+    background-image: url('../img/FondoN2.jpg');
+    font-family: arial;
+    width: 100%;
+    height:650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+
+
+/*-------Modificacion del menu despegable---------*/
+nav {
+
+background-color: #2c3e50;
+height: 80px;
+width: 100%;
+position: fixed;
+top: 0;
+z-index: 1;
+
+}
+
+
+ul {
+
+
+position: fixed;
+width: 25%;
+height: 100%;
+background: #2c3e50;
+top:  80px;
+left: -100%;
+transition: all .5s;
+text-align: left;
+
+
+}
+
+
+#a, #b, #c, #d, #e, #f, #g{
+
+color: white;
+margin-left: 5%;
+
+
+}
+
+
+
+
+nav ul li {
+
+display: block;
+line-height: 50px;
+margin:  0 15px;
+margin-left: 2%;
+
+}
+
+
+
+nav ul li:hover{
+
+background-color: #1b9bff;
+width: 100%;
+margin-left: 0%;
+transition: .5s;
+cursor: pointer;
+
+
+}
+
+
+
+h3.logotipo {
+
+color:  white;
+font-weight: bold;
+font-size: 34px;
+line-height: 80px;
+padding: 0 50px;
+float: right;
+
+
+}
+h4.menu {
+
+color:  white;
+font-weight: bold;
+font-size: 30px;
+line-height: 80px;
+padding: 0 10px;
+float: right;
+
+
+}
+
+
+
+nav ul li a {
+
+color:  white;
+font-size: 17px;
+padding: 5px 5px;
+border-radius: 5px;
+
+}
+
+
+
+.checkbtn {
+
+font-size: 30px;
+color: white;
+float: left;
+line-height: 80px;
+margin-left: 25px;
+cursor: pointer;
+
+
+
+
+}
+
+.checkbtn:hover {
+
+color: gray;
+
+}
+
+
+#check {
+
+display: none;
+
+
+}
+
+
+#check:checked ~ ul {
+
+left: 0;
+
+}
+
+/*----Edicion del footer---*/
+
+
+footer{
+
+background-color: black;
+margin-bottom: 0%;
+height: 50px;
+width: 100%;
+position: fixed;
+bottom: 0;
+    z-index: 1;
+}
+
+p.textofooter{
+margin-top: 1%;
+color: #fff;
+font-family: "Helvetica";
+text-align: center;
+    
+}
+/*---------------logo del header-------------*/
+.LogoIma{
+    width: auto;
+    height: 75px;
+    position: fixed;
+    margin-top: 6px;
+    right: 206px;
+    padding-bottom: 10px;
+}
+
+#ultimo + div {
+    visibility:hidden;
+    
+}
+.LogoIma{
+    width: auto;
+    height: 75px;
+    position: fixed;
+    margin-top: 6px;
+    right: 206px;
+    padding-bottom: 10px;
+}
+
+#user{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#cart{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#cart:hover{
+    color: gray;
+}
+#user:hover{
+    color: gray;
+}
+
+
+
+form{
+    margin-top: 250px;
+    background-color: rgba(255,255,255,0.7);
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 50px black;
+    margin-bottom: 60px;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+.FO, textarea{
+    background: none;
+    color:#c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+.FO:focus,textarea:focus{
+    outline: none;
+    color: rgb(94,93,93);
+}
+
+.FO:focus~.FA, 
+.FO:valid~.FA, 
+textarea:focus~.FA, textarea:valid~.FA{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #2196F3;
+}
+
+.FA{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top:10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+
+.FO:focus~.barra::before, textarea:focus~.barra::before{
+    width: 100%;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+    
+}
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: #2c3e50;
+    transition: 0.3s ease all;
+    left: 0%;
+}
+.FI{
+    background: #2c3e50;
+    
+    display: block;
+    width: 100px;
+    height: 40px;
+    border:none;
+    color:#fff; 
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px auto;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px #999;
+}
+.FI:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+
+
+
+
+
+
+@media (max-width:  952px) {
+
+
+* {
+
+margin :  0;
+
+
+}
+    body{
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+
+
+label.logotipo {
+
+font-size: 20px;
+padding-left: 10px;
+color: white;
+
+
+}
+    
+    form{
+        
+        margin-top: 300px;
+        width: 100%;
+        height:650px;
+        width: 50%;
+        margin-bottom: 100px;
+    }
+
+nav ul li a {
+
+font-size: 16px;
+
+}
+ .LogoIma{
+    width: auto;
+    height: 60px;
+    position: fixed;
+    margin-top: 15px;
+    right: 210px;
+    padding-bottom: 10px;
+}
+
+    nav{
+        height: 60px;
+    }
+    #user{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+#cart{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+    
+    .checkbtn{
+        margin-top: -7px;
+        height: 20px;
+        width: 25px;
+    }  
+    
+    h3.logotipo {
+
+font-size: 34px;
+line-height: 80px;
+padding: 0 40px;
+margin-top: -10px;
+float: right;
+
+
+}
+    
+    
+    
+}
+
+
+
+
+@media (max-width: 858px) {
+
+form{
+        width: 100%;
+        height: 100%;
+        top: 60px;
+        margin-top:30px;
+        border-radius: 0px;
+        position: relative;
+        margin-bottom:30px;
+        bottom:10px;
+    font-size: 20px;
+    }
+    
+    
+    
+.checkbtn {
+
+margin-left: 7%;
+
+ }
+
+
+ul {
+
+position: fixed;
+width: 100%;
+height: 100%;
+background: #2c3e50;
+top:  80px;
+left: -100%;
+transition: all .5s;
+text-align: left;
+
+
+}
+
+
+nav ul i a {
+
+font-size: 20px;
+
+}
+
+
+
+p.textofooter{
+margin-top: 4%;
+color: #fff;
+font-family: "Helvetica";
+text-align: center;
+
+}
+
+    .LogoIma{
+        z-index: -1000;
+        height: 0px;
+    }
+    h3.logotipo {
+
+font-size: 25px;
+line-height: 80px;
+padding: 0 20px;
+margin-top: -10px;
+float: right;
+
+
+}
+    .FI{
+        font-size: 20px;
+        height: 60px;
+        width: 150px;
+    }
+    .FA{
+        font-size: 12px;
+    }
+    .FO{
+        font-size: 12px;
+    }
+
+}

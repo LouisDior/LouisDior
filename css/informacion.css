@@ -1,0 +1,431 @@
+
+* {
+
+padding:  0;
+margin:  0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+
+
+
+}
+
+
+body {
+
+background-color: #F2F2F2;
+font-family: Arial;
+
+
+}
+
+#user{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#cart{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#cart:hover{
+    color: gray;
+}
+#user:hover{
+    color: gray;
+}
+
+
+nav {
+
+background-color:#2c3e50;
+height: 80px;
+width: 100%;
+position: fixed;
+top: 0;
+
+
+
+}
+
+
+.utec {
+
+margin-top: 8%;
+
+
+}
+
+
+
+ul {
+
+
+position: fixed;
+width: 25%;
+height: 100%;
+background: #2c3e50;
+top:  80px;
+left: -100%;
+transition: all .5s;
+text-align: left;
+
+
+}
+
+
+#a, #b, #c, #d, #e, #f, #g{
+
+color: white;
+margin-left: 5%;
+
+
+}
+
+
+
+
+nav ul li {
+
+display: block;
+line-height: 50px;
+margin:  0 15px;
+margin-left: 2%;
+
+}
+
+
+
+nav ul li:hover{
+
+background-color: #1b9bff;
+width: 100%;
+margin-left: 0%;
+transition: .5s;
+cursor: pointer;
+
+
+}
+
+
+
+label.logotipo {
+
+color:  white;
+font-weight: bold;
+font-size: 35px;
+line-height: 80px;
+padding: 0 50px;
+float: right;
+
+
+}
+
+
+
+nav ul li a {
+
+color:  white;
+font-size: 17px;
+padding: 5px 5px;
+border-radius: 5px;
+
+}
+
+a:hover {
+
+background: #1b9bff;
+transition: .5s;
+
+
+}
+
+
+.checkbtn {
+
+font-size: 30px;
+color: white;
+float: left;
+line-height: 80px;
+margin-left: 2%;
+cursor: pointer;
+
+
+
+
+}
+
+.checkbtn:hover {
+
+color: gray;
+
+}
+
+
+#check {
+
+display: none;
+
+
+}
+
+
+#check:checked ~ ul {
+
+left: 0;
+
+}
+
+
+
+
+footer{
+
+background-color: black;
+margin-bottom: 0%;
+height: 50px;
+width: 100%;
+position: fixed;
+bottom: 0;
+}
+
+p.textofooter{
+margin-top: 1%;
+color: #fff;
+font-family: "Arial";
+text-align: center;
+    
+}
+
+
+.utec img {
+
+display: block;
+margin:  auto;
+height: 250px;
+width: 250px;
+margin-top: 5%;
+
+
+
+}
+
+.utec h3 {
+
+text-align: center;
+margin-bottom: 3px;
+
+
+}
+
+
+.info_utec th td {
+
+padding: 15px;
+text-align: left;
+
+
+}
+
+.info_utec{
+    height: 600px;
+}
+
+
+.datos {
+
+margin-top: 2%;
+width: 30%;
+text-align: left;
+
+}
+
+
+
+
+
+
+
+table {
+
+width: 40%;
+border: 1px solid black;
+border-collapse: collapse;
+
+}
+
+
+th {
+
+ background-color: #2c3e50;
+ color: white;
+ text-align: left;
+ height: 50px;
+
+ 
+ }
+
+td {
+
+padding: 5px 5px;
+
+
+
+}
+
+
+tr:hover {
+
+	background-color: #D3D3D3;
+
+
+}
+#ultimo + div {
+    visibility:hidden;
+    
+}
+
+.LogoIma{
+    width: auto;
+    height: 75px;
+    position: fixed;
+    margin-top: 6px;
+    right: 206px;
+    padding-bottom: 10px;
+}
+
+
+@media (max-width:  952px) {
+
+
+* {
+
+margin :  0;
+
+
+}
+
+
+
+label.logotipo {
+
+font-size: 30px;
+padding-left: 10px;
+
+
+}
+
+nav ul li a {
+
+font-size: 16px;
+
+}
+.info_utec{
+    height: 600px;
+    margin-right: 2px;
+}
+
+    
+    .LogoIma{
+    width: auto;
+    height: 75px;
+    position: fixed;
+    margin-top: 6px;
+    right: 180px;
+    padding-bottom: 10px;
+}
+    
+}
+
+@media (max-width: 858px) {
+
+
+.checkbtn {
+
+margin-left: 7%;
+
+ }
+
+
+ul {
+
+position: fixed;
+width: 100%;
+height: 100%;
+background: #2c3e50;
+top:  80px;
+left: -100%;
+transition: all .5s;
+text-align: left;
+
+
+}
+
+
+nav ul i a {
+
+font-size: 20px;
+
+}
+
+
+.utec {
+
+margin-top: 25%;
+
+
+}
+
+
+.utec img {
+
+display: block;
+margin:  auto;
+height: 250px;
+width: 250px;
+margin-top: ;
+
+
+
+}
+
+
+.datos {
+
+margin-top: 4%;
+width: 70%;
+text-align: left;
+
+}
+
+
+table {
+
+width: 95%;
+border: 1px solid black;
+border-collapse: collapse;
+margin-bottom: 30%;
+
+
+}
+
+
+p.textofooter{
+margin-top: 4%;
+color: #fff;
+font-family: "Helvetica";
+text-align: center;
+    
+}
+
+.LogoIma{
+    z-index: -22;
+}
+
+}

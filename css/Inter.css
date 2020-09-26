@@ -1,0 +1,442 @@
+* {
+
+padding:  0;
+margin:  0;
+text-decoration: none;
+
+box-sizing: border-box;
+
+}
+
+
+body{
+
+font-family: Arial;
+	background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+#user{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#cart{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#cart:hover{
+    color: gray;
+}
+#user:hover{
+    color: gray;
+}
+
+
+
+nav {
+
+background-color: #2c3e50;
+height: 80px;
+width: 100%;
+position: fixed;
+top: 0;
+z-index: 1;
+
+}
+
+
+ul {
+
+
+position: fixed;
+width: 25%;
+height: 100%;
+background: #2c3e50;
+top:  80px;
+left: -100%;
+transition: all .5s;
+text-align: left;
+
+
+}
+
+
+#a, #b, #c, #d, #e, #f, #g{
+
+color: white;
+margin-left: 5%;
+
+
+}
+
+
+
+
+nav ul li {
+
+display: block;
+line-height: 50px;
+margin:  0 15px;
+margin-left: 2%;
+
+}
+
+
+
+nav ul li:hover{
+
+background-color: #1b9bff;
+width: 100%;
+margin-left: 0%;
+transition: .5s;
+cursor: pointer;
+
+
+}
+
+
+
+h3.logotipo {
+
+color:  white;
+font-weight: bold;
+font-size: 34px;
+line-height: 80px;
+padding: 0 50px;
+float: right;
+
+
+}
+h4.menu {
+
+color:  white;
+font-weight: bold;
+font-size: 30px;
+line-height: 80px;
+padding: 0 10px;
+float: right;
+
+
+}
+
+
+
+nav ul li a {
+
+color:  white;
+font-size: 17px;
+padding: 5px 5px;
+border-radius: 5px;
+
+}
+
+
+
+
+.checkbtn {
+
+font-size: 30px;
+color: white;
+float: left;
+line-height: 80px;
+margin-left: 25px;
+cursor: pointer;
+
+
+
+
+}
+
+.checkbtn:hover {
+
+color: gray;
+
+}
+
+
+#check {
+
+display: none;
+
+
+}
+
+
+#check:checked ~ ul {
+
+left: 0;
+
+}
+
+
+
+
+footer{
+
+background-color: black;
+margin-bottom: 0%;
+height: 50px;
+width: 100%;
+position: fixed;
+bottom: 0;
+    z-index: 1;
+}
+
+p.textofooter{
+margin-top: 1%;
+color: #fff;
+font-family: "Arial";
+text-align: center;
+    
+}
+/*----------------------------*/
+.Ma{
+    background-color: #fff;
+	width: auto;
+    max-width: 100%;
+    margin-bottom: 2px;
+    margin: 120px;
+	padding: 60px;
+    border-radius: 25px;
+    display: block;
+}
+.Ma h1{
+	text-align: center;
+	color: Red;
+	font-size: 40px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 2px #000;
+
+}
+
+.Ma h2{
+	text-align: center;
+	color: #000;
+	font-size: 40px;
+}
+.Ma p{
+    font-size: 19px;
+    text-align: justify;
+
+}
+.Ma ul{
+    padding: 15px;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.Ma ol{
+    padding: 15px;
+    font-size: 19px;
+    text-align: justify;
+}
+.Ma h4{
+    font-size: 25px;
+}
+.Ma a{
+    text-decoration: none;
+    color:#000;
+}
+.Ma .lista li:hover{
+    cursor: pointer;
+	transition: all .2s;
+ 
+}
+
+
+/*-----------------Imagen indice----------------------*/
+.Inter{
+    position:relative;
+    padding: 10px;
+    width: 300px;
+    height: 250px;
+}
+.Inter1{
+    position:relative;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    
+}
+
+#fot{
+    display: flex;
+    margin-left: 20px;
+  
+}
+.Ma h4{
+    margin-left: 20px;
+}
+
+.LogoIma{
+    width: auto;
+    height: 75px;
+    position: fixed;
+    margin-top: 6px;
+    right: 206px;
+    padding-bottom: 10px;
+}
+
+
+#ultimo + div {
+    visibility:hidden;
+    
+}
+/*----------------------------*/
+
+@media (max-width:  952px) {
+
+
+* {
+
+margin :  0;
+
+
+}
+
+    h4.menu{
+        visibility: hidden;
+        font-size: 1px;
+    }
+
+h3.logotipo {
+
+font-size: 28px;
+
+}
+
+nav ul li a {
+
+font-size: 16px;
+
+
+}
+
+    .pc{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+    }
+    
+    .Ma{
+	width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+	padding: 75px;
+    display: block;
+        margin-right: 0;
+        margin-left: 0;
+}
+    
+    .Ma h4{
+        text-align: center;
+    }  
+    
+    #fot{
+    display: block;
+    position: relative;
+    margin-left: 200px;
+    margin-right: 100px;
+    
+}
+    .LogoIma{
+    width: auto;
+    height: 75px;
+    position: fixed;
+    margin-top: 6px;
+    right: 180px;
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 858px) {
+    
+ h4.menu{
+        visibility: hidden;
+        font-size: 1px;
+    }
+
+ul {
+
+position: fixed;
+width: 100%;
+height: 100%;
+background: #2c3e50;
+top:  80px;
+left: -100%;
+transition: all .5s;
+text-align: left;
+
+
+}
+
+
+nav ul i a {
+
+font-size: 20px;
+
+}
+
+p.textofooter{
+margin-top: 4%;
+color: #fff;
+font-family: "Helvetica";
+text-align: center;
+    
+}
+ 
+    .Ma{
+    width: 100%;
+	padding: 10px;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+    
+    #fot{
+    display: block;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0;
+}
+    .Inter{
+
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        display: inline-block
+
+    }
+    .Inter1{
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        display: inline-block
+    
+    }
+    #lista li{
+        margin-right: 0;
+        font-size: 20px;
+        
+    }
+    #fot{
+        margin-right: 0;
+    }
+    .LogoIma{
+    z-index: -22;
+}
+}

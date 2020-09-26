@@ -1,0 +1,768 @@
+
+* {
+
+padding:  0;
+margin:  0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+
+
+
+
+}
+
+
+body {
+
+background-color: #F2F2F2;
+    font-family: "Arial";
+
+}
+
+#user{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#cart{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#cart:hover{
+    color: gray;
+}
+#user:hover{
+    color: gray;
+}
+
+
+nav {
+
+background-color: #2c3e50;
+height: 80px;
+width: 100%;
+position: fixed;
+top: 0;
+
+
+
+}
+
+
+.utec {
+
+margin-top: 8%;
+
+
+}
+
+h3.logotipo {
+
+color:  white;
+font-weight: bold;
+font-size: 34px;
+line-height: 80px;
+padding: 0 50px;
+float: right;
+
+
+}
+
+#lin1{
+
+
+position: fixed;
+width: 25%;
+height: 100%;
+background: #2c3e50;
+top:  80px;
+left: -100%;
+transition: all .5s;
+text-align: left;
+
+
+
+}
+
+
+#a, #b, #c, #d, #e, #f, #g{
+
+color: white;
+margin-left: 5%;
+
+
+}
+
+
+
+
+nav #lin1 li {
+
+display: block;
+line-height: 50px;
+margin:  0 15px;
+margin-left: 2%;
+
+}
+
+
+
+nav #lin1 li:hover{
+
+background-color: #1b9bff;
+width: 100%;
+margin-left: 0%;
+transition: .5s;
+cursor: pointer;
+
+
+}
+
+
+
+label.logotipo {
+
+color:  white;
+font-weight: bold;
+font-size: 35px;
+line-height: 80px;
+padding: 0 50px;
+float: right;
+
+
+}
+
+
+
+nav #lin1 li a {
+
+color:  white;
+font-size: 17px;
+padding: 5px 5px;
+border-radius: 5px;
+
+}
+
+ul a:hover {
+
+background: #1b9bff;
+transition: .5s;
+
+
+}
+
+
+
+.checkbtn {
+
+font-size: 30px;
+color: white;
+float: left;
+line-height: 80px;
+margin-left: 2%;
+cursor: pointer;
+
+
+
+
+}
+
+.checkbtn:hover {
+
+color: gray;
+
+}
+
+
+#check {
+
+display: none;
+
+
+}
+
+
+#check:checked ~ #lin1{
+
+left: 0;
+
+}
+
+
+.glosario {
+
+margin-top: 10%;
+margin-left:3%;
+height: 100%px;
+margin-bottom: 50px;
+display: relative;
+background-attachment: scroll;
+
+
+}
+
+
+
+.glosario h1 {
+
+
+text-align: center;
+
+
+}
+
+
+
+.glosario label {
+
+z-index: -1;
+padding: 20px 30px;
+cursor: pointer;
+background: #4E8774;
+border-radius: 3px;
+color: #FFF;
+display: inline-block;
+margin-top: 2%;
+
+
+
+}
+
+.glosario label:hover {
+
+background: gray;
+
+
+}
+
+
+
+
+.glosario .cerrar{
+
+
+display: block;
+margin: 0 auto;
+width: 12%;
+margin-bottom: 2%;
+
+
+}
+
+
+
+
+.a,.b, .c,.d,.e,.f,.g,.h,.i,.j,.k,.l,.m,.n,.ñ,.o,.p,.q,.r,.s,.t,.u,.v,.w,.x,.y,.z{
+
+    
+background-color: white;
+top:60%;
+left: 50%;
+width: 80%;
+transform: translate(-50%, -50%);
+position: absolute;
+display: none;
+box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+
+}
+
+
+p {
+
+padding: 20px 20px;
+
+
+
+}
+
+
+input {
+
+
+display: none;
+
+
+}
+
+
+
+#letra_a:checked ~ .a{
+
+display: block;
+margin: 0 auto;
+
+
+}
+
+
+
+
+#letra_b:checked ~ .b{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+
+#letra_c:checked ~ .c{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+
+#letra_d:checked ~ .d{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_e:checked ~ .e{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_f:checked ~ .f{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+
+#letra_g:checked ~ .g{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_h:checked ~ .h{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_i:checked ~ .i{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_j:checked ~ .j{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_k:checked ~ .k{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_l:checked ~ .l{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_m:checked ~ .m{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_n:checked ~ .n{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_ñ:checked ~ .ñ{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_o:checked ~ .o{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_p:checked ~ .p{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_q:checked ~ .q{
+
+display: block;
+margin: 0 auto;
+
+}
+
+#letra_r:checked ~ .r{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+
+#letra_s:checked ~ .s{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_t:checked ~ .t{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_u:checked ~ .u{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_v:checked ~ .v{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+#letra_w:checked ~ .w{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+
+#letra_x:checked ~ .x{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+
+#letra_y:checked ~ .y{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+
+#letra_z:checked ~ .z{
+
+display: block;
+margin: 0 auto;
+
+}
+
+
+
+
+
+
+footer{
+
+background-color: black;
+margin-bottom: 0%;
+height: 50px;
+width: 100%;
+position: fixed;
+bottom: 0;
+}
+
+p.textofooter{
+margin-top: 1%;
+color: #fff;
+font-family: "Helvetica";
+text-align: center;
+    
+}
+
+.LogoIma{
+    width: auto;
+    height: 75px;
+    position: fixed;
+    margin-top: 6px;
+    right: 206px;
+    padding-bottom: 10px;
+}
+
+
+@media (max-width:  952px) {
+
+
+* {
+
+margin :  0;
+
+
+}
+
+
+.glosario {
+
+margin-top: 10%;
+margin-left:3%;
+height: 720px;
+margin-bottom: 50px;
+display: relative;
+background-attachment: scroll;
+
+
+}
+
+
+
+.glosario h1 {
+
+
+text-align: center;
+
+
+}
+
+
+
+.glosario label {
+
+  
+padding: 20px 30px;
+cursor: pointer;
+background: #4E8774;
+border-radius: 3px;
+color: #FFF;
+display: inline-block;
+margin-top: 2%;
+
+
+
+}
+
+.glosario label:hover {
+
+background: gray;
+
+
+}
+
+
+
+
+.glosario .cerrar{
+
+
+display: block;
+margin: 0 auto;
+width: 15%;
+margin-bottom: 2%;
+
+
+}
+
+
+
+
+.a,.b, .c,.d,.e,.f,.g,.h,.i,.j,.k,.l,.m,.n,.ñ,.o,.p,.q,.r,.s,.t,.u,.v,.w,.x,.y,.z{
+
+    
+background-color: white;
+top:90%;
+left: 50%;
+width: 80%;
+transform: translate(-50%, -50%);
+position: absolute;
+display: none;
+box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+
+}
+    
+    
+
+label.logotipo {
+
+font-size: 30px;
+padding-left: 10px;
+
+
+}
+
+nav #lin1 li a {
+
+font-size: 16px;
+
+
+
+}
+
+.LogoIma{
+    width: auto;
+    height: 75px;
+    position: fixed;
+    margin-top: 6px;
+    right: 180px;
+    padding-bottom: 10px;
+}
+}
+
+
+
+@media (max-width: 858px) {
+
+
+.checkbtn {
+
+margin-left: 7%;
+
+ }
+
+#lin1{
+
+position: fixed;
+width: 100%;
+height: 100%;
+background: #2c3e50;
+top:  80px;
+left: -100%;
+transition: all .5s;
+text-align: left;
+
+
+}
+
+
+nav #lin1 i a {
+
+font-size: 20px;
+
+}
+
+
+
+.glosario {
+width: 100%;
+margin-top: 30%;
+margin-left: 0;
+margin-bottom: 20%;
+
+}
+
+
+.glosario .a,.b, .c,.d,.e,.f,.g,.h,.i,.j,.k,.l,.m,.n,.ñ,.o,.p,.q,.r,.s,.t,.u,.v,.w,.x,.y,.z{
+
+
+position: fixed;
+top:50vh;
+width: 100%;
+height: 100vh;
+overflow-y: auto;
+
+
+}
+
+
+
+
+.glosario label {
+
+
+display: block;
+margin-left: 0%;
+
+
+}
+
+
+
+.glosario .cerrar{
+
+
+display: block;
+margin: 0 auto;
+width: 37%;
+margin-bottom: 20%;
+
+
+}
+
+nav #lin1 i a {
+
+font-size: 20px;
+
+}
+
+
+p.textofooter{
+margin-top: 1%;
+color: #fff;
+font-family: "Helvetica";
+text-align: center;
+    vertical-align: middle;
+
+}
+
+.LogoIma{
+    z-index: -22;
+}
+
+}

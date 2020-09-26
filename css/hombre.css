@@ -1,0 +1,665 @@
+
+* {
+
+padding:  0;
+margin:  0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+
+
+
+
+}
+
+
+body {
+
+background-color: #F2F2F2;
+font-family: Arial;
+}
+
+
+#home{
+    
+    height: 50px;
+    width: 120px;
+    border: none;
+    box-shadow: 5px 5px 10px #999;
+    align-content: center;
+    align-items: center;
+    margin: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #2c3e50;
+    cursor: pointer;
+}
+#home:hover{
+    -webkit-transform:scale(1.1);
+            transform:scale(1.1);
+}
+
+
+nav {
+
+background-color: #2c3e50;
+height: 80px;
+width: 100%;
+position: fixed;
+top: 0;
+z-index: 100; 
+
+
+
+}
+
+
+.utec {
+
+margin-top: 8%;
+
+
+}
+
+
+
+ul {
+
+
+position: fixed;
+width: 25%;
+height: 100%;
+background: #2c3e50;
+top:  80px;
+left: -100%;
+transition: all .5s;
+text-align: left;
+
+
+
+}
+
+
+#a, #b, #c, #d, #e, #f, #g{
+
+color: white;
+margin-left: 5%;
+
+
+}
+
+
+
+
+nav ul li {
+
+display: block;
+line-height: 50px;
+margin:  0 15px;
+margin-left: 2%;
+
+}
+
+
+
+nav ul li:hover{
+
+background-color: #1b9bff;
+width: 100%;
+margin-left: 0%;
+transition: .5s;
+cursor: pointer;
+
+
+}
+
+
+
+label.logotipo {
+
+color:  white;
+font-weight: bold;
+font-size: 35px;
+line-height: 80px;
+padding: 0 50px;
+float: right;
+
+
+}
+
+
+
+nav ul li a {
+
+color:  white;
+font-size: 17px;
+padding: 5px 5px;
+border-radius: 5px;
+
+}
+
+ul a:hover {
+
+background: #1b9bff;
+transition: .5s;
+
+
+}
+
+
+
+.checkbtn {
+
+font-size: 30px;
+color: white;
+float: left;
+line-height: 80px;
+margin-left: 2%;
+cursor: pointer;
+
+
+
+
+}
+
+.checkbtn:hover {
+
+color: gray;
+
+}
+
+
+#check {
+
+display: none;
+
+
+}
+
+
+#check:checked ~ ul {
+
+left: 0;
+
+}
+
+
+
+
+
+footer{
+
+background-color: black;
+margin-bottom: 0%;
+height: 50px;
+width: 100%;
+position: fixed;
+bottom: 0;
+}
+
+p.textofooter{
+margin-top: 1%;
+color: #fff;
+font-family: "Helvetica";
+text-align: center;
+    
+}
+.LogoIma{
+    width: auto;
+    height: 75px;
+    position: fixed;
+    margin-top: 6px;
+    right: 206px;
+    padding-bottom: 10px;
+}
+
+
+#ultimo + div {
+    visibility:hidden;
+    
+}
+
+
+
+#tema{
+    font-size: 50px;
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
+    
+}
+
+
+
+		.block-list
+		{
+            
+            padding: 2px;
+            margin-top: 120px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 100px;
+			background-color: white;
+			width: 70%;
+			box-shadow: 5px 5px 5px #999;
+			height: 1800px;
+            align-items: center;
+            align-content: center;
+            
+		}
+		
+		
+		div.galeria
+		{
+            z-index: -2;
+            margin:40px;
+            width: 200px;
+            position: flex;
+            display: inline-block;
+            box-shadow: 5px 5px 10px #999;
+		}
+		div.galeria:hover
+        {
+            
+            -webkit-transform:scale(1.1);
+            transform:scale(1.1);
+        }
+        div.galeria img
+        {
+            z-index: -2;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 250px;
+        }
+        .desc-Titulo
+        {
+        	width: 100%;
+        	text-align: center;
+        	padding: 20px;
+            font-size: 18px;
+            
+        }
+        .desc-text
+        {
+        	width: 50%;
+            font-size: 17px;
+        	float: left;
+        	text-align: justify;
+        	margin: 5px;
+        	margin: 6px;
+        }
+        .desc-precio
+        {
+        	float: right;
+        	width: 35%;
+            margin-right: 8px;
+        	background-color: orange;
+        	padding: 5px;
+        	margin-bottom: 2px;
+        	text-align: center;
+            color: white;
+        }
+        input.Carrito
+        {
+        	color: white;
+            margin-right: 8px;
+        	background-color: #04B404;
+        	float: right;
+        	width: 35%;
+        	padding: 5px;
+        	margin-bottom: 8px;
+        	text-align: center;
+        	cursor: pointer;
+        	border: 2px solid #04B404;
+        }
+        input.Carrito:hover
+        {
+        	background-color: #04B4AE;
+        	border: 2px solid #04B4AE;
+        }
+        input.Carrito:Focus
+        {
+        	background-color: #088A08;
+        	border: 2px solid #088A08;
+        	transform: scale(0.9);
+        }
+
+
+#user{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#cart{
+    width: 35px;
+    height: 35px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#cart:hover{
+    color: gray;
+}
+#user:hover{
+    color: gray;
+}
+
+
+
+@media (max-width:  952px) {
+
+
+* {
+
+margin :  0;
+
+
+}
+
+#tema{
+    font-size: 40px;
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
+    
+}
+
+
+
+		.block-list
+		{
+            
+            padding: 2px;
+            margin-top: 83px;
+            padding: 50px;
+            padding-left: 70px;
+            margin-bottom: 10px;
+			background-color: white;
+			width: 100%;
+			box-shadow: 5px 5px 5px #999;
+			height: 100%;
+            align-items: center;
+            align-content: center;
+            
+		}
+		
+		
+		div.galeria
+		{
+            z-index: -2;
+            margin:20px;
+            width: 220px;
+            position: flex;
+            display: inline-block;
+            box-shadow: 5px 5px 10px #999;
+		}
+		
+        div.galeria img
+        {
+            z-index: -2;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 200px;
+        }
+        .desc-Titulo
+        {
+        	width: 100%;
+        	text-align: center;
+        	padding: 20px;
+            font-size: 14px;
+            
+        }
+        .desc-text
+        {
+        	width: 50%;
+            font-size: 17px;
+        	float: left;
+        	text-align: justify;
+        	margin: 5px;
+        	margin: 6px;
+        }
+        .desc-precio
+        {
+        	float: right;
+        	width: 35%;
+            margin-right: 8px;
+        	background-color: orange;
+        	padding: 5px;
+        	margin-bottom: 2px;
+        	text-align: center;
+            color: white;
+        }
+        input.Carrito
+        {
+        	color: white;
+            margin-right: 8px;
+        	background-color: #04B404;
+        	float: right;
+        	width: 35%;
+        	padding: 5px;
+        	margin-bottom: 8px;
+        	text-align: center;
+        	cursor: pointer;
+        	border: 2px solid #04B404;
+        }
+        input.Carrito:hover
+        {
+        	background-color: #04B4AE;
+        	border: 2px solid #04B4AE;
+        }
+        input.Carrito:Focus
+        {
+        	background-color: #088A08;
+        	border: 2px solid #088A08;
+        	transform: scale(0.9);
+        }
+
+
+label.logotipo {
+
+font-size: 30px;
+padding-left: 10px;
+
+
+}
+
+nav ul li a {
+
+font-size: 16px;
+
+
+
+}
+.LogoIma{
+    width: auto;
+    height: 75px;
+    position: fixed;
+    margin-top: 6px;
+    right: 180px;
+    padding-bottom: 10px;
+}
+
+}
+
+
+
+@media (max-width: 858px) {
+
+
+.checkbtn {
+
+margin-left: 7%;
+
+ }
+
+
+ul {
+
+position: fixed;
+width: 100%;
+height: 100%;
+background: #2c3e50;
+top:  80px;
+left: -100%;
+transition: all .5s;
+text-align: left;
+
+
+}
+
+
+nav ul i a {
+
+font-size: 20px;
+
+}
+
+
+
+p.textofooter{
+margin-top: 4%;
+color: #fff;
+font-family: "Helvetica";
+text-align: center;
+
+}
+
+.LogoIma{
+    z-index: -22;
+}
+    
+    
+    
+		.block-list
+		{
+            
+           
+            margin-top: 65px;
+            padding: 10px;
+            padding-left: 30px;
+            margin-bottom: 45px;
+			background-color: white;
+			width: 100%;
+			box-shadow: 5px 5px 5px #999;
+			height: 100%;
+            align-items: center;
+            align-content: center;
+            
+		}
+		
+		
+		div.galeria
+		{
+            z-index: -2;
+            margin:20px;
+            width: 220px;
+            position: flex;
+            display: inline-block;
+            box-shadow: 5px 5px 10px #999;
+		}
+		
+        div.galeria img
+        {
+            z-index: -2;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 200px;
+        }
+        .desc-Titulo
+        {
+        	width: 100%;
+        	text-align: center;
+        	padding: 20px;
+            font-size: 14px;
+            
+        }
+        .desc-text
+        {
+        	width: 50%;
+            font-size: 17px;
+        	float: left;
+        	text-align: justify;
+        	margin: 5px;
+        	margin: 6px;
+        }
+        .desc-precio
+        {
+        	float: right;
+        	width: 35%;
+            margin-right: 8px;
+        	background-color: orange;
+        	padding: 5px;
+        	margin-bottom: 2px;
+        	text-align: center;
+            color: white;
+        }
+        input.Carrito
+        {
+        	color: white;
+            margin-right: 8px;
+        	background-color: #04B404;
+        	float: right;
+        	width: 35%;
+        	padding: 5px;
+        	margin-bottom: 8px;
+        	text-align: center;
+        	cursor: pointer;
+        	border: 2px solid #04B404;
+        }
+        input.Carrito:hover
+        {
+        	background-color: #04B4AE;
+        	border: 2px solid #04B4AE;
+        }
+        input.Carrito:Focus
+        {
+        	background-color: #088A08;
+        	border: 2px solid #088A08;
+        	transform: scale(0.9);
+        }
+
+
+label.logotipo {
+
+font-size: 25px;
+padding-right: 13px;
+
+
+}
+
+nav ul li a {
+
+font-size: 16px;
+
+}
+    
+.LogoIma{
+        z-index: -1000;
+        height: 0px;
+    }
+    
+    h3.logotipo {
+
+font-size: 15px;
+line-height: 80px;
+padding: 0 20px;
+margin-top: -10px;
+float: right;
+
+
+}
+    #user{
+        height: 30px;
+        margin-top: 15px;
+    }
+    #cart{
+        height: 30px;
+        top: 15px;
+        margin-top: 25px;
+        
+    }
+
+}
